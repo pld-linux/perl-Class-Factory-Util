@@ -9,7 +9,7 @@ Summary:	Class::Factory::Util - provide utility methods for factory classes
 Summary(pl):	Class::Factory::Util - dostarczanie metod narzêdziowych dla klas przemys³owych
 Name:		perl-Class-Factory-Util
 Version:	1.6
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -49,5 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_vendorlib}/Class/*/*.pm
+%dir %{perl_vendorlib}/Class/Factory
+%{perl_vendorlib}/Class/Factory/*.pm
 %{_mandir}/man3/*
