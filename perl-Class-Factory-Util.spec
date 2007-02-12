@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	Factory-Util
 Summary:	Class::Factory::Util - provide utility methods for factory classes
-Summary(pl):	Class::Factory::Util - dostarczanie metod narzêdziowych dla klas przemys³owych
+Summary(pl.UTF-8):   Class::Factory::Util - dostarczanie metod narzÄ™dziowych dla klas przemysÅ‚owych
 Name:		perl-Class-Factory-Util
 Version:	1.6
 Release:	2
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module exports a method that is useful for factory classes.
 
-%description -l pl
-Ten modu³ eksportuje metodê, która mo¿e byæ przydatna dla klas
-przemys³owych.
+%description -l pl.UTF-8
+Ten moduÅ‚ eksportuje metodÄ™, ktÃ³ra moÅ¼e byÄ‡ przydatna dla klas
+przemysÅ‚owych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
