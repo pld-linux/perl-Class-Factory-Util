@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Class
 %define		pnam	Factory-Util
 Summary:	Class::Factory::Util - provide utility methods for factory classes
