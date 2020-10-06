@@ -14,9 +14,11 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aebd79da361b676a7ecd3245fc3d1b3f
-URL:		http://search.cpan.org/dist/Class-Factory-Util/
+URL:		https://metacpan.org/release/Class-Factory-Util
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -49,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %dir %{perl_vendorlib}/Class/Factory
-%{perl_vendorlib}/Class/Factory/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Class/Factory/Util.pm
+%{_mandir}/man3/Class::Factory::Util.3pm*
